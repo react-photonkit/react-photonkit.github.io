@@ -10,3 +10,12 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.iframe {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  border: 1px solid #bebebe;
+  border-radius: 6px;
+}

@@ -15,5 +15,8 @@ module.exports = React.createClass
       </Jumbotron>
 
       <div className="container">
+        <div className="text-center">
+          <iframe className="iframe" src="/example/main.html" frameBorder="0" />
+        </div>
       </div>
     </div>

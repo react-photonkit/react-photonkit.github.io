@@ -1,11 +1,14 @@
 var path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'app/app.cjsx'),
+  entry: {
+    'app': path.resolve(__dirname, 'app/app.cjsx'),
+    'main': path.resolve(__dirname, 'example/main.cjsx')
+  },
   output: {
     path: path.resolve(__dirname, 'out'),
     publicPath: 'out/',
-    filename: 'app.js'
+    filename: '[name].js'
   },
   module: {
     loaders: [
