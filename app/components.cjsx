@@ -1,7 +1,15 @@
 React = require 'react'
-
-window.React = React
+{ Jumbotron } = require 'react-bootstrap'
 
 module.exports = React.createClass
   render: ->
-    <div>components</div>
+    <div>
+      <Jumbotron>
+        <div className="container">
+          <h1>Components</h1>
+        </div>
+      </Jumbotron>
+
+      <div className="container">
+      </div>
+    </div>
