@@ -14,7 +14,7 @@ module.exports = React.createClass
       <Jumbotron>
         <div className="container">
           <div className="text-center">
-            <img src="../assets/photonkit.png" width="256" />
+            <img src="../assets/photonkit.png" width="192" />
             <h1>{Pkg.name}</h1>
             <p>Photon components built with React</p>
             <Button bsStyle="primary" href={@releases}>Download</Button>
