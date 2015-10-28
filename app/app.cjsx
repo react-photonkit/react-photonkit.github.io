@@ -8,6 +8,7 @@ GettingStarted = require './getting-started.cjsx'
 Components = require './components.cjsx'
 
 require '../index.scss'
+require '../node_modules/highlight.js/styles/github.css'
 
 history = createHistory queryKey: false
 ReactDom.render(
