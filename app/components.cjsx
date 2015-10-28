@@ -1,7 +1,7 @@
 React = require 'react'
 Highlight = require 'react-highlight'
 {
-  Jumbotron, Grid, Row, Col, PageHeader, Tabs, Tab
+  Button, Jumbotron, Grid, Row, Col, PageHeader, Tabs, Tab
 } = require 'react-bootstrap'
 
 module.exports = React.createClass
@@ -31,7 +31,7 @@ module.exports = React.createClass
               {@getButtonGroups()}
             </div>
           </Tab>
-          <Tab eventKey={6} title="Lists">{@getForms()}</Tab>
+          <Tab eventKey={6} title="Forms">{@getForms()}</Tab>
           <Tab eventKey={7} title="Tables">{@getTables()}</Tab>
           <Tab eventKey={8} title="Icons">{@getIcons()}</Tab>
         </Tabs>
@@ -253,7 +253,12 @@ module.exports = React.createClass
       <Row>
         <Col xs={12} md={6}>
           <Highlight className="jsx">
-            {""""""}
+            {"""<ButtonGroup>
+                  <Button glyph="home" />
+                  <Button glyph="arrows-ccw" />
+                  <Button glyph="share" />
+                  <Button glyph="help-circled" />
+                </ButtonGroup>"""}
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
@@ -270,7 +275,30 @@ module.exports = React.createClass
       <Row>
         <Col xs={12} md={6}>
           <Highlight className="jsx">
-            {""""""}
+            {"""<form>
+                  <Input ref="email" type="email"
+                    placeholder="Email" label="Email Address" />
+                  <Input ref="password" type="password"
+                    placeholder="Password" label="password" />
+
+                  <TextArea ref="description" rows=3 label="Description" />
+                  <Options ref="options" items={["Option 1", "Option 2"]} />
+
+                  <CheckBox ref="cb1" label="This is a checkbox" />
+                  <CheckBox ref="cb2" label="This is a checkbox too" />
+
+                  <RadioGroup ref="radios" name="radios">
+                    <Radio checked label="Keep your options open" />
+                    <Radio label="More options" />
+                  </RadioGroup>
+
+                  <div className="form-actions">
+                    <Button form type="submit"
+                      ptStyle="default" text="Cancel" />
+                    <Button form type="submit"
+                      ptStyle="primary" text="OK" onClick={@submit} />
+                  </div>
+                </form>"""}
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
@@ -287,7 +315,22 @@ module.exports = React.createClass
       <Row>
         <Col xs={12} md={6}>
           <Highlight className="jsx">
-            {""""""}
+            {"""<Table>
+                  <thead>
+                    <tr>
+                      <th>Name</th><th>Kind</th><th>File Size</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>photon.css</td><td>CSS</td><td>28K</td>
+                    </tr>
+                    ...
+                    <tr>
+                      <td>photon.css</td><td>CSS</td><td>28K</td>
+                    </tr>
+                  </tbody>
+                </Table>"""}
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
@@ -304,8 +347,25 @@ module.exports = React.createClass
       <Row>
         <Col xs={12} md={6}>
           <Highlight className="jsx">
-            {""""""}
+            {"""
+              <Icon glyph="note" title="note" />
+              <Icon glyph="note-beamed" title="note-beamed" />
+              <Icon glyph="music" title="music" />
+              <Icon glyph="search" title="search" />
+              <Icon glyph="flashlight" title="flashlight" />
+              <Icon glyph="mail" title="mail" />
+              <Icon glyph="heart" title="heart" />
+              <Icon glyph="heart-empty" title="heart-empty" />
+              <Icon glyph="star" title="star" />
+              <Icon glyph="star-empty" title="star-empty" />
+              ...
+            """}
           </Highlight>
+          <p>
+            <Button href="http://photonkit.com/components/" target="_blank">
+              See all Icons
+            </Button>
+          </p>
         </Col>
         <Col xs={12} md={6}>
           <iframe className="iframe" src="/example/icon" frameBorder="0" />

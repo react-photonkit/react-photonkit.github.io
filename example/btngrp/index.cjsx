@@ -12,7 +12,18 @@ Main = React.createClass
   render: ->
     <Window>
       <Toolbar title="header" />
-      <Content />
+      <Content>
+        <Pane>
+          <div className="padded-more">
+            <ButtonGroup>
+              <Button glyph="home" />
+              <Button glyph="arrows-ccw" />
+              <Button glyph="share" />
+              <Button glyph="help-circled" />
+            </ButtonGroup>
+          </div>
+        </Pane>
+      </Content>
       <Toolbar psType="footer" title="footer" />
     </Window>
 
