@@ -7,8 +7,8 @@ Home = require './home.cjsx'
 GettingStarted = require './getting-started.cjsx'
 Components = require './components.cjsx'
 
-require '../index.scss'
 require '../node_modules/highlight.js/styles/github.css'
+require '../index.scss'
 
 history = createHistory queryKey: false
 ReactDom.render(

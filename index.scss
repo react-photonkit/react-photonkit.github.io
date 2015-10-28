@@ -24,12 +24,12 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   border-radius: 6px;
 }
 
-.hljs {
-  background: transparent;
-}
-
 pre code {
   overflow-x: auto;
   word-wrap: normal;
   white-space: pre;
+}
+
+.hljs {
+  background: transparent;
 }
