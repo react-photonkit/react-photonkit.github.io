@@ -1,7 +1,6 @@
 React = require 'react'
 Header = require './header.cjsx'
-
-window.React = React
+Footer = require './footer.cjsx'
 
 module.exports = React.createClass
   render: ->
@@ -10,4 +9,5 @@ module.exports = React.createClass
       <div className="body">
         {@props.children}
       </div>
+      <Footer />
     </div>

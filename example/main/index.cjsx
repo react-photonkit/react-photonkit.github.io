@@ -3,7 +3,8 @@ ReactDom = require 'react-dom'
 {
   Toolbar, NavGroup, NavTitle, NavGroupItem
   Window, Content, PaneGroup, Pane, Button
-  Input, Radio, RadioGroup, TextArea, CheckBox
+  Input, Radio, RadioGroup, TextArea, CheckBox,
+  Actionbar, ButtonGroup
 } = require 'react-photonkit'
 
 
@@ -15,13 +16,27 @@ Main = React.createClass
 
   render: ->
     <Window>
-      <Toolbar title="react-photonkit example" />
+      <Toolbar title="react-photonkit example">
+        <Actionbar>
+          <ButtonGroup>
+            <Button glyph="left-open-big" />
+            <Button glyph="right-open-big" />
+          </ButtonGroup>
+          <ButtonGroup>
+            <Button glyph="home" />
+            <Button glyph="arrows-ccw" />
+            <Button glyph="share" />
+            <Button glyph="help-circled" />
+          </ButtonGroup>
+        </Actionbar>
+      </Toolbar>
       <Content>
         <PaneGroup>
           <Pane ptSize="sm" sidebar>
             <NavGroup activeKey={1} onSelect={@onSelect}>
               <NavTitle>Favorite</NavTitle>
-              <NavGroupItem eventKey={1} glyph="home" text="home" />
+              <NavGroupItem eventKey={0} glyph="home" text="home" />
+              <NavGroupItem eventKey={1} glyph="light-up" text="photonkit" />
               <NavGroupItem eventKey={2} glyph="download" text="download" />
             </NavGroup>
           </Pane>
