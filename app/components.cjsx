@@ -105,7 +105,7 @@ module.exports = React.createClass
                   <Toolbar title="header" />
                   <Content>
                     <Pane>
-                      <TabGroup activeKey={1} onSelect={@onSelect}>
+                      <TabGroup activeKey={1} onSelect={@onSelect} draggable>
                         <TabItem eventKey={1} title="tab1">
                           <div className="padded-more">
                             <b>tab1</b> contents
@@ -141,7 +141,7 @@ module.exports = React.createClass
                   <Toolbar title="header" />
                   <Content>
                     <Pane ptSize="sm" sidebar>
-                      <NavGroup activeKey={1} onSelect={@onSelect}>
+                      <NavGroup activeKey={1} onSelect={@onSelect} draggable>
                         <NavTitle>icon & text</NavTitle>
                         <NavGroupItem eventKey={1}
                                       glyph="home" text="home" />
