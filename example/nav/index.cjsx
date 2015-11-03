@@ -18,7 +18,7 @@ Main = React.createClass
       <Toolbar title="header" />
       <Content>
         <Pane ptSize="sm" sidebar>
-          <NavGroup activeKey={1} onSelect={@onSelect}>
+          <NavGroup activeKey={1} onSelect={@onSelect} draggable>
             <NavTitle>icon & text</NavTitle>
             <NavGroupItem eventKey={1} glyph="home" text="home" />
             <NavGroupItem eventKey={2} glyph="download" text="download" />

@@ -18,7 +18,7 @@ Main = React.createClass
       <Toolbar title="header" />
       <Content>
         <Pane>
-          <TabGroup activeKey={1} onSelect={@onSelect}>
+          <TabGroup activeKey={1} onSelect={@onSelect} draggable>
             <TabItem eventKey={1} title="tab1">
               <div className="padded-more">
                 <b>tab1</b> contents
