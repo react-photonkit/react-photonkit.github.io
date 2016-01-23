@@ -54,7 +54,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/toolbar" frameBorder="0" />
+          <iframe className="iframe" src="/example/toolbar/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -88,7 +88,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/actionbar" frameBorder="0" />
+          <iframe className="iframe" src="/example/actionbar/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -124,7 +124,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/tab" frameBorder="0" />
+          <iframe className="iframe" src="/example/tab/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -160,7 +160,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/nav" frameBorder="0" />
+          <iframe className="iframe" src="/example/nav/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -196,7 +196,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/list" frameBorder="0" />
+          <iframe className="iframe" src="/example/list/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -240,7 +240,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/button" frameBorder="0" />
+          <iframe className="iframe" src="/example/button/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -262,7 +262,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/btngrp" frameBorder="0" />
+          <iframe className="iframe" src="/example/btngrp/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -302,7 +302,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/form" frameBorder="0" />
+          <iframe className="iframe" src="/example/form/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -334,7 +334,7 @@ module.exports = React.createClass
           </Highlight>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/table" frameBorder="0" />
+          <iframe className="iframe" src="/example/table/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
@@ -368,7 +368,7 @@ module.exports = React.createClass
           </p>
         </Col>
         <Col xs={12} md={6}>
-          <iframe className="iframe" src="/example/icon" frameBorder="0" />
+          <iframe className="iframe" src="/example/icon/" frameBorder="0" />
         </Col>
       </Row>
     </Grid>
