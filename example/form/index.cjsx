@@ -22,7 +22,7 @@ Main = React.createClass
                 placeholder="Email" label="Email Address" />
               <Input ref="password" type="password"
                 placeholder="Password" label="password" />
-              <TextArea ref="description" rows=3 label="Description" />
+              <TextArea ref="description" rows={3} label="Description" />
               <Options ref="options" items={["Option 1", "Option 2"]} />
               <CheckBox ref="cb1" label="This is a checkbox" />
               <CheckBox ref="cb2" label="This is a checkbox too" />
