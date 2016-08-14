@@ -33,9 +33,7 @@ module.exports = {
       loader: "file-loader"
     }]
   },
-  entry: {
-    'app': path.resolve(__dirname, 'app/app.jsx')
-  },
+  entry: path.resolve(__dirname, 'app/app.jsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: 'dist/',
