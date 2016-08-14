@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
 	render() {
 		return (
 			<div className="footer">
-				<hr />
+				<hr/>
 				<div className="text-center">
 					<small>Code licensed under the MIT License and the docs are licensed under CC BY 3.0</small>
 				</div>

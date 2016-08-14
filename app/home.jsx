@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button, Jumbotron, Grid, Row, Col} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
-import {MainSample} from './sample.jsx';
 import Pkg from '../node_modules/react-photonkit/package.json';
+import {MainSample} from './sample.jsx';
 
 export default class Home extends React.Component {
 	constructor() {
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
 				<Jumbotron>
 					<div className="container">
 						<div className="text-center">
-							<img src="../assets/photonkit.png" width="192" />
+							<img src="../assets/photonkit.png" width="192"/>
 							<h1>{Pkg.name}</h1>
 							<p>Photon components built with React</p>
 							<Button bsStyle="primary" href={this.releases}>Download</Button>
@@ -42,6 +42,6 @@ export default class Home extends React.Component {
 					</Grid>
 				</div>
 			</div>
-		)
+		);
 	}
 }

@@ -5,7 +5,7 @@ import {Jumbotron, PageHeader} from 'react-bootstrap';
 export default class GettingStart extends React.Component {
 	constructor() {
 		super();
-		
+
 		this.template =
 			`<Window>
 				<Toolbar title="basic template" />

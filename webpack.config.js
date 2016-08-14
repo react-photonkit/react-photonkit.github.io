@@ -1,15 +1,15 @@
-var path = require('path');
+'use strict';
+
+const path = require('path')
 
 module.exports = {
-  entry: {
-    'app': path.resolve(__dirname, 'app/app.jsx')
-  },
   module: {
 		preLoaders: [{
       test: /\.js?/,
       exclude: /node_modules/,
       loader: 'xo-loader'
-    }],    loaders: [{
+    }],
+		loaders: [{
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			loaders: ['babel-loader']
@@ -33,9 +33,24 @@ module.exports = {
       loader: "file-loader"
     }]
   },
+  entry: {
+    'app': path.resolve(__dirname, 'app/app.jsx')
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: 'dist/',
     filename: '[name].js'
+  },
+	xo: {
+    extends: ["xo", "xo-react"],
+		env: ['browser'],
+    rules: {
+			'no-alert': 0,
+			'react/jsx-no-bind': [2, {
+				'ignoreRefs': true,
+				'allowArrowFunctions': true
+			}],
+      "quote-props": ["error", "as-needed"]
+    }
   }
 };

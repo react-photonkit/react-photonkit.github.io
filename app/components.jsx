@@ -1,6 +1,5 @@
 import React from 'react';
-import Highlight from 'react-highlight';
-import {Jumbotron, Tabs, Tab} from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 import Sample from './sample.jsx';
 
 export default class Components extends React.Component {
