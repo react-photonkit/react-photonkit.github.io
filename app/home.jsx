@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Jumbotron, Grid, Row, Col} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
+import {MainSample} from './sample.jsx';
 import Pkg from '../node_modules/react-photonkit/package.json';
 
 export default class Home extends React.Component {
@@ -33,7 +34,9 @@ export default class Home extends React.Component {
 					<Grid>
 						<Row>
 							<Col xs={12} md={8} mdOffset={2}>
-								<iframe className="iframe" src="/example/main/" frameBorder="0" />
+								<div className="iframe padded-more">
+									<MainSample/>
+								</div>
 							</Col>
 						</Row>
 					</Grid>

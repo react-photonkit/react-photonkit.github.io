@@ -15,6 +15,8 @@ export default class Header extends React.Component {
 		this.state = {
 			expanded: false
 		}
+
+		this.onClick = this.onClick.bind(this);
 	}
 
 	onToggle() {
