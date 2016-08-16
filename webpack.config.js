@@ -48,6 +48,7 @@ module.exports = {
 				'ignoreRefs': true,
 				'allowArrowFunctions': true
 			}],
+			'react/require-optimization': 0,
       "quote-props": ["error", "as-needed"]
     }
   }
