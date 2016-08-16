@@ -8,7 +8,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.js --hot --port 8000 --inline",
+    "start": "webpack-dev-server --config webpack.config.js --quiet --hot --port 8000 --inline",
     "build": "NODE_ENV=production webpack -p --config webpack.config.js"
   },
   "keywords": [
@@ -48,6 +48,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
+    "webpack-dashboard": "0.0.1",
     "webpack-dev-server": "^1.14.1",
     "xo": "^0.16.0",
     "xo-loader": "^0.7.0"

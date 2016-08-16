@@ -1,6 +1,9 @@
 'use strict';
 
 const path = require('path')
+const Dashboard = require('webpack-dashboard');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const dashboard = new Dashboard();
 
 module.exports = {
 	module: {
@@ -51,5 +54,8 @@ module.exports = {
 			'react/require-optimization': 0,
 			"quote-props": ["error", "as-needed"]
 		}
-	}
+	},
+	plugins: [
+		new DashboardPlugin(dashboard.setData)
+	]
 };
