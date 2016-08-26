@@ -1,9 +1,6 @@
 'use strict';
 
 const path = require('path')
-const Dashboard = require('webpack-dashboard');
-const DashboardPlugin = require('webpack-dashboard/plugin');
-const dashboard = new Dashboard();
 
 module.exports = {
 	module: {
@@ -13,7 +10,7 @@ module.exports = {
 			loader: 'xo-loader'
 		}],
 		loaders: [{
-			test: /\.jsx?$/,
+			test: /\.js?/,
 			exclude: /node_modules/,
 			loaders: ['babel-loader']
 		}, {
@@ -36,7 +33,9 @@ module.exports = {
 			loader: "file-loader"
 		}]
 	},
-	entry: path.resolve(__dirname, 'app/app.jsx'),
+	entry: {
+		'app': path.resolve(__dirname, 'app/app.jsx'),
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: 'dist/',
@@ -52,10 +51,8 @@ module.exports = {
 				'allowArrowFunctions': true
 			}],
 			'react/require-optimization': 0,
-			"quote-props": ["error", "as-needed"]
+			"quote-props": ["error", "as-needed"],
+			"max-lines": 0
 		}
-	},
-	plugins: [
-		new DashboardPlugin(dashboard.setData)
-	]
+	}
 };
