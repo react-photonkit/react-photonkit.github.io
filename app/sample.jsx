@@ -106,9 +106,9 @@ const SAMPLE = {
 				<Toolbar title="header"/>
 				<Content>
 					<Pane>
-						<ListGroup>
-							<ListItem image="https://avatars3.githubusercontent.com/u/1744446?v=3&s=400" title="list item" subtitle="subtitle" active/>
-							<ListItem image="https://avatars3.githubusercontent.com/u/1744446?v=3&s=400" title="list item" subtitle="subtitle"/>
+						<ListGroup draggable>
+							<ListItem image="https://avatars3.githubusercontent.com/u/1744446?v=3&s=400" title="list item 1" subtitle="subtitle 1" active/>
+							<ListItem image="https://avatars3.githubusercontent.com/u/1744446?v=3&s=400" title="list item 2" subtitle="subtitle 2"/>
 						</ListGroup>
 					</Pane>
 				</Content>
